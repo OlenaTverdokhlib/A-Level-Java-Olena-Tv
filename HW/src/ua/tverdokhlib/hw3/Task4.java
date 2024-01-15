@@ -22,7 +22,7 @@ public class Task4 {
             } else if (userNumber < randomValue) {
                 System.out.println("Мало. Попробуйте еще раз. ");
             } else {
-                System.out.println("Угадал. Победа! ");
+                System.out.println("Вы угадали. Победа! ");
             }
         } while (userNumber != randomValue);
 
