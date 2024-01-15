@@ -21,7 +21,7 @@ public class Task2 {
         }
     }
 
-        private static boolean isPalindrome(String str) {
+    private static boolean isPalindrome(String str) {
         int length = str.length();
         for (int i = 0; i < length / 2; i++) {
             if (str.charAt(i) != str.charAt(length - 1 - i)) {
