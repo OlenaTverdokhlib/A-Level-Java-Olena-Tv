@@ -3,7 +3,7 @@ package ua.tverdokhlib.hw3;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Task3 {
+public class Task3 {А
     //Подсчитать количество слов в строке
     //• Вводится строка, состоящая из слов, разделенных пробелами. Требуется посчитать количество слов в ней.
     public static void main(String[] args) {
@@ -15,13 +15,8 @@ public class Task3 {
     }
         //Считаем количество слов
         public static int wordNumber(String input) {
-            int count = 0;
-            for (int i = 0; i < input.length(); i++) {
-                if (input.charAt(i) == ' ') {
-                    count++;
-                }
-            }
-            return count;
+           String[] words = input.split(" ");
+            return words.length;
 
         }
     }
