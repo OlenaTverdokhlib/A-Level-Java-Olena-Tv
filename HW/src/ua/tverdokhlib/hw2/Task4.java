@@ -5,9 +5,13 @@ public class Task4 {
         int x = -5;
         int y = 7;
         int z = 11;
-        if ((Math.abs(x)) < (Math.abs(y)) && (Math.abs(x)) < (Math.abs(z))) {
+        int absX = Math.abs(x);
+        int absY = Math.abs(y);
+        int absZ = Math.abs(z);
+
+        if (absX < absY && absX < absZ) {
             System.out.println (x);
-        } else if ((Math.abs(y)) < (Math.abs(x)) && (Math.abs(y)) < (Math.abs(z))) {
+        } else if (absY < absX && absY < absZ) {
             System.out.println (y);
         } else {
             System.out.println (z);
