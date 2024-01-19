@@ -9,7 +9,7 @@ public class Task31 {
         System.out.println("Исходный массив");
         printArray(array);
         int[] targetArray = copyArray(array);
-        replaceEvenwithZeros(targetArray);
+        replaceEvensWithZeros(targetArray);
         System.out.println("Массив с замененными на нули четными числами");
         printArray(targetArray);
     }
@@ -19,7 +19,7 @@ public class Task31 {
         }
     }
 
-    public static void replaceEvenwithZeros (int[] array) {
+    public static void replaceEvensWithZeros (int[] array) {
         for (int i = 0; i < array.length; i++) {
             if(array[i] % 2 == 0) {
                 array[i] = 0;
