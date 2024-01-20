@@ -10,9 +10,9 @@ public class Task3 {
         System.out.println("Исходный массив:");
         printArray(sourceArray);
         int[][] targetArray = copyArray(sourceArray);
-        int[][] swappedArray = swappedRowsAndColumns(copyArray(sourceArray));
+        int[][] swappedArray = swappedRowsAndColumns(targetArray);
         System.out.println("Массив после замены местами строк и столбцов:");
-        printArray(sourceArray);
+        printArray(swappedArray);
     }
 
     private static void fillArray(int[][] array) {
@@ -40,7 +40,7 @@ public class Task3 {
         int columns = array[0].length;
         int[][] copy = new int[rows][columns];
         for (int i = 0; i < rows; i++) {
-            copy[i] = Arrays.copyOf(array[i],[columns]);
+            copy[i] = Arrays.copyOf(array[i], columns);
         }
         return copy;
     }
