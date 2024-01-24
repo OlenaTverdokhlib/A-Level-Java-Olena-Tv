@@ -1,7 +1,8 @@
 package ua.tverdokhlib.hw4;
 
 import java.util.concurrent.ThreadLocalRandom;
-
+//Заполнить одномерный массив случайными целочисленными значениями.
+//• Проверить сколько простых чисел присутствует в массиве. Размер массива 1000 элементов.
 public class Task2 {
     public static void main(String[] args) {
         int[] array = new int[1000];
@@ -41,7 +42,7 @@ public class Task2 {
             return false;
         }
         for (int i = 2; i <= Math.sqrt(value); i++) {
-            if (value % 1 == 0) {
+            if (value % i == 0) {
                 return false;
             }
         }
