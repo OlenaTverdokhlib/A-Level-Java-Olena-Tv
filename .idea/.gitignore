@@ -1,0 +1,28 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# IntelliJ IDEA
+.idea/
+# Compiled class files
+*.class
+# Package files 
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+ 
+# Files #
+*.png
+
+#User specific
+.out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
